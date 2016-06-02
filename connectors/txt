@@ -1,0 +1,106 @@
+ args = sys.argv[1:]
+    try:
+        options, args = getopt.getopt(args, 'hu:l:vd:rcnm',
+            ['help',
+             'user-agent=',
+             'logfile=',
+             'verbose',
+             'debug=',
+             'retrieval-all',
+             'cache-response',
+             'replace-nonascii',
+             'universal-activex'
+            ])
+    except getopt.GetoptError, exp:
+        usage()
+
+    if not options and not args:
+        usage()
+
+    for option in options:
+        if option[0] == '-h' or option[0] == '--help':
+            usage()
+        if option[0] == '-u' or option[0] == '---user-agent':
+            for ua in config.UserAgents:
+                if option[1] == str(ua[0]):
+                    config.userAgent    = str(ua[2])
+                    config.appCodeName  = str(ua[3])
+                    config.appName      = str(ua[4])
+                    config.appVersion   = str(ua[5])
+                    config.browserTag   = str(ua[6])
+        if option[0] == '-l' or option[0] == '--logfile':
+            config.logfilename = option[1]
+        if option[0] == '-v' or option[0] == '--verbose':
+            config.verboselevel = 1
+        if option[0] == '-d' or option[0] == '--debug':
+            config.verboselevel = int(option[1])
+        if option[0] == '-r' or option[0] == '--retrieval-all':
+            config.retrieval_all = True
+        if option[0] == '-c' or option[0] == '--cache-response':
+            config.cache_response = True
+        if option[0] == '-n' or option[0] == '--replace-nonascii':
+            config.replace_nonascii = True
+        if option[0] == '-m' or option[0] == '--universal-activex':
+            config.universal_activex = True
+
+        if config.verboselevel >= config.VERBOSE_DEBUG:
+            config.universal_activex = True
+
+    config.initial_URL = args[0]
+
+    check_logdirs()
+
+
+    from DOM.DOM import DOM
+    phoneycdom = DOM(config.initial_URL)
+    alerts = phoneycdom.analyze()
+    if alerts:
+        report(alerts)
+    else:
+        print "No Shellcode/Heapspray Alerts."
+
+    binaries_dir = os.listdir(BINARIES_DIR)
+    for file in binaries_dir:
+        filename = "%s/%s" % (BINARIES_DIR, file,)
+        newname  = "%s/%s" % (MISC_DIR, file, )
+        if magic.file(filename) in DOWNLOADS_STR:
+            shutil.move(filename, newname)
+
+
+
+
+
+
+
+
+
+
+
+for alert in alerts:
+        print "\n===================================="
+        if alert.atype == "ALERT_SHELLCODE":
+            print "|--------AID:" + str(alert.aid) + "----------"
+            print "|ATYPE:"       + str(alert.atype)
+            print "|MESSAGE:"     + str(alert.msg)
+            print "|MISC:"        + str(alert.misc)
+            print "|LENGTH:"      + str(len(alert.shellcode))
+            print "|SHELLCODE:"
+            print hexlify(alert.shellcode)
+            print "|Now run it:"
+            shellcoderesult = alert.run_shellcode()
+            print str(shellcoderesult)
+            for item in shellcoderesult:
+                if item['name'] == 'URLDownloadToFile':
+                    url = item['arguments'][1][2][2]
+                    print "Downloading from URL: %s" % url
+                    download(url)
+
+        if alert.atype == "ALERT_HEAPSPRAY" and alert.entropy < 1:
+            print "|--------AID:" + str(alert.aid) + "----------"
+            print "|ATYPE:"       + str(alert.atype)
+            print "|MESSAGE:"     + str(alert.msg)
+            print "|HIT:"         + str(alert.hit)
+            print "|MEMUSAGE:"    + str(alert.memusage)
+            print "|LENGTH:"      + str(alert.length)
+            print "|ENTROPY:"     + str(alert.entropy)
+            print "|MISC:"        + str(alert.misc)

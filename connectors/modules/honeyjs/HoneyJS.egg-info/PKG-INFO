@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: HoneyJS
+Version: 0.0.1
+Summary: An auditted JS engine.
+Home-page: http://code.google.com/p/phoneyc/
+Author: Z. Chen, Paul J. Davis
+Author-email: czj.pub@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: C
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Other
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urls>
+	<clientInfo>
+		<version>1.0</version>
+		<ipAddress>192.168.1.1</ipAddress>
+		<commandLine><![CDATA[honeywalk.py -D http://bar/]]></commandLine>
+		<startTime>2010-01-01T01:01:01</startTime>
+		<endTime>2010-01-01T02:01:01</endTime>
+	</clientInfo>
+	<url id="http://foo">
+		<urlString>http://foo.com/</urlString>
+		<dnsResolution>
+			<hostname>foo.com</hostname>
+			<resolvesTo>
+				<ipAddress family="ipv4" timestamp="2010-01-01T01:01:01">1.3.3.7</ipAddress>
+				<ipAddress family="ipv6" timestamp="2010-01-01T01:01:01">fe:80::1:3:3:7</ipAddress>
+				<cname timestamp="2010-01-01T01:01:01">web.foo.com</cname>
+			</resolvesTo>
+		</dnsResolution>
+		<referrer>http://foo/</referrer>
+		<httpStatus>200</httpStatus>
+		<httpRedirectedTo>http://bar.com</httpRedirectedTo>
+		<serverHeaders><![CDATA[HTTP/1.1 200 OK
+		Date: Mon, 01 Feb 2010 00:58:21 GMT
+		Server: Apache/2.2.9
+		Accept-Ranges: bytes
+		Vary: Accept-Encoding
+		Connection: close
+		Content-Type: text/html]]>
+		</serverHeaders>
+		<errors />
+		<requestHeaders><![CDATA[GET / HTTP/1.0]]></requestHeaders>
+		<contents>
+			<content><![CDATA[foo bar]]></content>
+			<content-length units="bytes">31337</content-length>
+			<hashes>
+				<hash algorithm="md5">d3b07384d113edec49eaa6238ad5ff00</hash>
+				<hash algorithm="sha1">f1d2d2f924e986ac86fdf7b36c94bcdf32beec15</hash>
+			</hashes>
+			<content-type>text/html</content-type>
+		</contents>
+		<outgoingLinks>
+		  <link tag="img">http://foo.bar.com/img.png</link>
+		  <link tag="iframe">http://bad.stuff.com/foo.php</link>
+		</outgoingLinks>
+		<disposition>malicious</disposition>
+		<kit version="1.0">Fragus</kit>
+		<exploits>
+			<exploit>
+				<vulnerability id="CVE-2010-0001">CVE-2010-0001</vulnerability>
+				<module clsid="EIUGEWGU" clsname="FooBar.1" />
+				<consequence type="launch process">
+					<additionalData>netsh.exe allow all</additionalData>
+				</consequence>
+				<shellcode>90 90 90</shellcode>
+			</exploit>
+		</exploits>
+		<output><![CDATA[Hello, i pwnt you!]]></output>
+		<classifications>
+			<classification>
+				<antivirus>
+					<engine>ClamAV</engine>
+					<version>0.99</version>
+					<datVersion>20100109-1</datVersion>
+					<timestamp>2010-01-01T01:01:01</timestamp>
+					<result>Exploit.HTML.Gen.4</result>
+				</antivirus>
+				<antivirus />
+				<urlbls>
+					<urlbl>
+						<bl>bl.google.com</bl>
+						<timestamp>2010-01-01T01:01:01</timestamp>
+						<result>127.0.0.2</result>
+					</urlbl>
+					<urlbl />
+				</urlbls>
+			</classification>
+			<classification />
+		</classifications>
+	</url>
+</urls>

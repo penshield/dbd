@@ -1,0 +1,11 @@
+ActiveXObject.ConnectAndEnterRoom.ConnectAndEnterRoom=<function ConnectAndEnterRoom at 0x7f85f2c48ed8>
+ActiveXObject.ConnectAndEnterRoom.classid=clsid:AE93C5DF-A990-11D1-AEBD-5254ABDD2B69
+ActiveXObject.ConnectAndEnterRoom.style=display:none
+ActiveXObject.ConnectAndEnterRoom.id=target
+ActiveXObject.ConnectAndEnterRoom.appendChild
+ActiveXObject.appendChild.ConnectAndEnterRoom(<DOM.DOMObject.DOMObject object at 0x7f85f2c51c90>,)
+ActiveXObject.Comodo.ExecuteStr=<function ExecuteStr at 0x7f85fb5dcc08>
+ActiveXObject.Comodo.id=obj
+ActiveXObject.Comodo.classid=clsid:309F674D-E4D3-46BD-B9E2-ED7DFD7FD176
+ActiveXObject.Comodo.appendChild
+ActiveXObject.appendChild.Comodo(<DOM.DOMObject.DOMObject object at 0x7f85f72c92d0>,)
