@@ -1,0 +1,22 @@
+ActiveXObject.MicrosoftXMLHTTP.open=<function open at 0x7f4b59a00e60>
+ActiveXObject.MicrosoftXMLHTTP.onreadystatechange=function () {
+    switch (b.xmlhttp.readyState) {
+      case 1:
+        b.onLoading();
+        break;
+      case 2:
+        b.onLoaded();
+        break;
+      case 3:
+        b.onInteractive();
+        break;
+      case 4:
+        b.response = b.xmlhttp.responseText, b.responseXML = b.xmlhttp.responseXML, b.responseStatus[0] = b.xmlhttp.status, b.responseStatus[1] = b.xmlhttp.statusText, b.execute && b.runResponse(), b.elementObj &&
+            (elemNodeName = b.elementObj.nodeName, elemNodeName.toLowerCase(), "input" == elemNodeName ||
+            "select" == elemNodeName ||
+            "option" == elemNodeName || "textarea" == elemNodeName ? (b.elementObj.value = b.response) : (b.elementObj.innerHTML = b.response)), "200" == b.responseStatus[0] ? b.onCompletion() : b.onError(), b.URLString = "";
+      default:;
+    }
+}
+ActiveXObject.MicrosoftXMLHTTP.send
+ActiveXObject.send.MicrosoftXMLHTTP(u'pid=197351&rate=1&rndval=1464915726414',)

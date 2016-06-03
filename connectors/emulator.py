@@ -173,6 +173,8 @@ def callback(ch, method, properties, body):
         alerts = phoneycdom.analyze()
         if alerts:
             report(alerts,id,filename,url)
+        else:
+            print("No Alerts , The website seems ok")
 
 
 if __name__ == "__main__":

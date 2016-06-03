@@ -7,9 +7,10 @@ from scrapy.contrib.linkextractors.lxmlhtml import LxmlParserLinkExtractor
 import hashlib
 import time
 from mq.MessagingManager import MessagingManager , DBDMessage
+from scrapy.utils.spider import DefaultSpider
 
 
-class DBDCrawler(scrapy.Spider):
+class DBDCrawler(DefaultSpider):
 
     name =""
     start_urls =[]

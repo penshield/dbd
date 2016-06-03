@@ -1,0 +1,12 @@
+ActiveXObject.Flash.width=1
+ActiveXObject.Flash.height=1
+ActiveXObject.Flash.classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000
+ActiveXObject.Flash.id=midflash
+ActiveXObject.Flash.appendChild
+ActiveXObject.appendChild.Flash(<DOM.DOMObject.DOMObject object at 0x7f2ab3997910>,)
+ActiveXObject.Flash.width=1
+ActiveXObject.Flash.height=1
+ActiveXObject.Flash.classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000
+ActiveXObject.Flash.id=midflash
+ActiveXObject.Flash.appendChild
+ActiveXObject.appendChild.Flash(<DOM.DOMObject.DOMObject object at 0x7f2ab38c3e10>,)
