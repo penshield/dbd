@@ -1,7 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13cc2a45-6054-489e-ac43-e8e628a322c5" name="Default" comment="" />
+    <list default="true" id="13cc2a45-6054-489e-ac43-e8e628a322c5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/DatabaseManager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mq/MessagingManager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mq/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thugrunner.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/lib/python/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/modules/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/modules/hcalert/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/modules/hcalert/build/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/modules/hcalert/build/lib.linux-x86_64-2.7/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/modules/hcalert/build/lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/modules/honeyjs/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/modules/honeyjs/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/modules/libemu/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../../connectors/pots/phoneyc/output/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../README.MD" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/log/html/127.0.0.1:9090-25d9907bb1f4689fe86b38f86c0a58b1.html" afterPath="$PROJECT_DIR$/../../../connectors/log/html/127.0.0.1:9090-25d9907bb1f4689fe86b38f86c0a58b1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/log/html/127.0.0.1:9090-a63c3ecd180d97fcd1e291a800ad6b4b.html" afterPath="$PROJECT_DIR$/../../../connectors/log/html/127.0.0.1:9090-a63c3ecd180d97fcd1e291a800ad6b4b.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/22811_Elazar.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/22811_Elazar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/2448.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/2448.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/2575.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/2575.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/test/2mix.html" afterPath="$PROJECT_DIR$/../../../connectors/test/2mix.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/3420.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/3420.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4042.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4042.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4043.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4043.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4158.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4158.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4226.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4226.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4250.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4250.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4351.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4351.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4420.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4420.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4594.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4594.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4613.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4613.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4663.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4663.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4829.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4829.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4869.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4869.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4874.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4874.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4875.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4875.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4894.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4894.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4903.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4903.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4909.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4909.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4918.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4918.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4932.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4932.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4967.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4967.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4979.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4979.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4982.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4982.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4986.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4986.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/4987.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/4987.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5025.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5025.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5043.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5043.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5045.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5045.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5049.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5049.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5051.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5051.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5052.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5052.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5153.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5153.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5190.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5190.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5193.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5193.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5205.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5205.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5264.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5264.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/5271.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/5271.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/ARCserve_AddColumn_BoF.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/ARCserve_AddColumn_BoF.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/AnswerWorks.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/AnswerWorks.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logging/BaseLogging.py" afterPath="$PROJECT_DIR$/Logging/BaseLogging.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/BitDefender.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/BitDefender.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/CABrightStor.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/CABrightStor.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/ConnectAndEnterRoom.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/ConnectAndEnterRoom.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/CreativeSoftAttack.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/CreativeSoftAttack.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/crawler/DBDCrawler.py" afterPath="$PROJECT_DIR$/../../../connectors/crawler/DBDCrawler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/DLinkMPEG.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/DLinkMPEG.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/DVRHOSTWeb.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/DVRHOSTWeb.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/db/DatabaseManager.py" afterPath="$PROJECT_DIR$/../../../connectors/db/DatabaseManager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/DirectShow.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/DirectShow.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/Domino.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/Domino.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/FileUploader.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/FileUploader.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/GatewayWeblaunch.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/GatewayWeblaunch.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/GomWeb.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/GomWeb.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/IMWebControl.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/IMWebControl.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/mq/MessagingManager.py" afterPath="$PROJECT_DIR$/../../../connectors/mq/MessagingManager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/MicrosoftWorks7Attack.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/MicrosoftWorks7Attack.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logging/modules/MongoDB.py" afterPath="$PROJECT_DIR$/Logging/modules/MongoDB.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/Move.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/Move.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/MyspaceUploader.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/MyspaceUploader.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/NCTAudioFile2.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/NCTAudioFile2.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/NamoInstaller.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/NamoInstaller.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/NeoTracePro.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/NeoTracePro.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/OurgameGLWorld.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/OurgameGLWorld.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/OurgameGLWorld.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/OurgameGLWorld.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/PPlayer.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/PPlayer.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/PTZCamPanel.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/PTZCamPanel.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/Pps.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/Pps.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/QuantumStreaming.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/QuantumStreaming.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/RDSDataSpace.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/RDSDataSpace.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/RediffBolDownloaderAttack.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/RediffBolDownloaderAttack.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/RtspVaPgCtrl.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/RtspVaPgCtrl.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/SSReaderPdg2_LoadPage.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/SSReaderPdg2_LoadPage.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/SSReaderPdg2_Register.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/SSReaderPdg2_Register.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/SonicWallNetExtenderAddRouteEntry.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/SonicWallNetExtenderAddRouteEntry.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/StormConfig.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/StormConfig.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/SymantecBackupExec.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/SymantecBackupExec.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThugAPI/ThugAPI.py" afterPath="$PROJECT_DIR$/ThugAPI/ThugAPI.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logging/ThugLogging.py" afterPath="$PROJECT_DIR$/Logging/ThugLogging.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/Toshiba.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/Toshiba.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/UUSeeUpdate.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/UUSeeUpdate.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/VLC.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/VLC.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/WMEncProfileManager.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/WMEncProfileManager.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/WinZip.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/WinZip.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/Xupload.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/Xupload.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/YahooJukebox.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/YahooJukebox.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/YahooMessengerYVerInfo.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/YahooMessengerYVerInfo.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/YahooMessengerYwcvwr_GetComponentVersion.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/YahooMessengerYwcvwr_GetComponentVersion.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/YahooMessengerYwcvwr_server.htm" afterPath="$PROJECT_DIR$/../../../connectors/samples/YahooMessengerYwcvwr_server.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/aol_ampx.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/aol_ampx.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/common.py" afterPath="$PROJECT_DIR$/../../../connectors/common.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/connector.py" afterPath="$PROJECT_DIR$/../../../connectors/connector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/crawler.py" afterPath="$PROJECT_DIR$/../../../connectors/crawler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Debugger/d8.js" afterPath="$PROJECT_DIR$/Debugger/d8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/domino.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/domino.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/emulator.py" afterPath="$PROJECT_DIR$/../../../connectors/emulator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/inner_html_example.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/inner_html_example.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/intuit.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/intuit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logging/logging.conf" afterPath="$PROJECT_DIR$/Logging/logging.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/log/html/login-account.confirm-information.pro-2acd2556cbc91fd5dffc5d1265bb67aa.html" afterPath="$PROJECT_DIR$/../../../connectors/log/html/login-account.confirm-information.pro-2acd2556cbc91fd5dffc5d1265bb67aa.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/log/html/login-account.confirm-information.pro-ab6114087b9c7df06d15662e12c3e24d.html" afterPath="$PROJECT_DIR$/../../../connectors/log/html/login-account.confirm-information.pro-ab6114087b9c7df06d15662e12c3e24d.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/test/ms09002-mod.html" afterPath="$PROJECT_DIR$/../../../connectors/test/ms09002-mod.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/msrichtxt.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/msrichtxt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/qvodctl-2.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/qvodctl-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/qvodctl.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/qvodctl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/test/qvodsrc.html" afterPath="$PROJECT_DIR$/../../../connectors/test/qvodsrc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/rgod_imesh.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/rgod_imesh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/show-283-1.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/show-283-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/test/ssreader.html" afterPath="$PROJECT_DIR$/../../../connectors/test/ssreader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/ssreader_0day.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/ssreader_0day.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/test/ssreader_0day.html" afterPath="$PROJECT_DIR$/../../../connectors/test/ssreader_0day.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/test/ssreader_noplus.html" afterPath="$PROJECT_DIR$/../../../connectors/test/ssreader_noplus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DOM/thug.js" afterPath="$PROJECT_DIR$/DOM/thug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thug.py" afterPath="$PROJECT_DIR$/thug.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/toshiba.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/toshiba.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../connectors/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/xupload-2.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/xupload-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../connectors/samples/xupload.html" afterPath="$PROJECT_DIR$/../../../connectors/samples/xupload.html" />
+    </list>
     <ignored path="src.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -14,7 +162,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/src$thug.coverage" NAME="thug Coverage Results" MODIFIED="1464963539086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/src$thug.coverage" NAME="thug Coverage Results" MODIFIED="1464966821715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/src$thugrunner.coverage" NAME="thugrunner Coverage Results" MODIFIED="1465039623999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -27,7 +176,63 @@
     <favorites_list name="src" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="thugrunner.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thugrunner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4257028" vertical-offset="418" max-vertical-offset="945">
+              <caret line="42" column="76" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
+              <folding>
+                <element signature="e#23#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="585">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessagingManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mq/MessagingManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="797" max-vertical-offset="1425">
+              <caret line="68" column="73" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="73" />
+              <folding>
+                <element signature="e#23#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Logging/logging.conf" />
+        <option value="$PROJECT_DIR$/Logging/BaseLogging.py" />
+        <option value="$PROJECT_DIR$/Logging/modules/JSON.py" />
+        <option value="$PROJECT_DIR$/Logging/modules/HPFeeds.py" />
+        <option value="$PROJECT_DIR$/Logging/modules/MITRE/MAEC11.py" />
+        <option value="$PROJECT_DIR$/Logging/ThugLogging.py" />
+        <option value="$PROJECT_DIR$/thug.py" />
+        <option value="$PROJECT_DIR$/ThugAPI/ThugAPI.py" />
+        <option value="$PROJECT_DIR$/Logging/modules/MongoDB.py" />
+        <option value="$PROJECT_DIR$/mq/MessagingManager.py" />
+        <option value="$PROJECT_DIR$/common.py" />
+        <option value="$PROJECT_DIR$/thugrunner.py" />
+      </list>
+    </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -38,14 +243,14 @@
     <option name="width" value="1855" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -61,6 +266,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -79,9 +285,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logging" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logging" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -91,14 +342,43 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.thug">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.thugrunner">
     <configuration default="false" name="thug" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="src" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thug.py" />
+      <option name="PARAMETERS" value="http://127.0.0.1:7070/ConnectAndEnterRoom.htm" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="thugrunner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -111,10 +391,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="src" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thug.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/thugrunner.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -203,6 +485,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,9 +509,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
@@ -272,6 +554,20 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="src" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,30 +588,21 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="src" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.thug" />
+      <item index="1" class="java.lang.String" itemvalue="Python.thugrunner" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.thug" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.thugrunner" />
+        <item index="1" class="java.lang.String" itemvalue="Python.thug" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="13cc2a45-6054-489e-ac43-e8e628a322c5" name="Default" comment="" />
@@ -325,30 +612,50 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249309" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25262576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25815368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4516129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -368,7 +675,45 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/thug.py</url>
+          <line>122</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ThugAPI/ThugAPI.py</url>
+          <line>263</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ThugAPI/ThugAPI.py</url>
+          <line>282</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Logging/modules/MongoDB.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/thugrunner.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/thug.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/thug.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -380,11 +725,342 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mq/MessagingManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="1350">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thugrunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="840">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#23#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/thug.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38626608" vertical-offset="540" max-vertical-offset="4110">
-          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3208" max-vertical-offset="4020">
+          <caret line="250" column="21" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugins/ThugPlugins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/ConfigParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4663" max-vertical-offset="11385">
+          <caret line="284" column="8" selection-start-line="284" selection-start-column="8" selection-end-line="284" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThugAPI/ThugAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3922" max-vertical-offset="4470">
+          <caret line="297" column="8" selection-start-line="297" selection-start-column="8" selection-end-line="297" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/DFT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18028" max-vertical-offset="18750">
+          <caret line="1219" column="44" selection-start-line="1219" selection-start-column="44" selection-end-line="1219" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/ThugLogging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="928" max-vertical-offset="4395">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#682#718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/SampleLogging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="448" max-vertical-offset="1905">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/BaseLogging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="1410">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/modules/MongoDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="433" max-vertical-offset="6915">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/modules/HPFeeds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1213" max-vertical-offset="3495">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4020">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/zope/interface/declarations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33211678" vertical-offset="4258" max-vertical-offset="12750">
+          <caret line="308" column="8" selection-start-line="308" selection-start-column="8" selection-end-line="308" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThugAPI/ThugOpts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.24270073" vertical-offset="628" max-vertical-offset="3900">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/DFT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30793992" vertical-offset="17818" max-vertical-offset="18750">
+          <caret line="1219" column="44" selection-start-line="1219" selection-start-column="44" selection-end-line="1219" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThugAPI/ThugVulnModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33261803" vertical-offset="20" max-vertical-offset="1770">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/logging.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06849315" vertical-offset="0" max-vertical-offset="876">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="932">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="932">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="932">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/ConfigParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18776824" vertical-offset="4085" max-vertical-offset="11385">
+          <caret line="284" column="8" selection-start-line="284" selection-start-column="8" selection-end-line="284" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/modules/JSON.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25965664" vertical-offset="1513" max-vertical-offset="3750">
+          <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/modules/HPFeeds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19527897" vertical-offset="1198" max-vertical-offset="3495">
+          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/modules/MITRE/MAEC11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1936888" vertical-offset="1547" max-vertical-offset="4545">
+          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/curl/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33211678" vertical-offset="793" max-vertical-offset="2820">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/future/backports/urllib/robotparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33211678" vertical-offset="613" max-vertical-offset="3240">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/modules/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="548">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm40/system/python_stubs/-1138322026/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33211678" vertical-offset="37408" max-vertical-offset="77220">
+          <caret line="2506" column="8" selection-start-line="2506" selection-start-column="8" selection-end-line="2506" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/LoggingModules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8603491" vertical-offset="0" max-vertical-offset="495">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/SampleLogging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45386535" vertical-offset="448" max-vertical-offset="1905">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plugins/ThugPlugins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5660848" vertical-offset="568" max-vertical-offset="1440">
+          <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/BaseLogging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45386535" vertical-offset="523" max-vertical-offset="1470">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/modules/MongoDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0099751" vertical-offset="2505" max-vertical-offset="7170">
+          <caret line="200" column="35" selection-start-line="200" selection-start-column="35" selection-end-line="200" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logging/ThugLogging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45386535" vertical-offset="2083" max-vertical-offset="4560">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <element signature="e#682#718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1447" max-vertical-offset="1995">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThugAPI/ThugAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="868" max-vertical-offset="4485">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/pika/adapters/blocking_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5286783" vertical-offset="24868" max-vertical-offset="37110">
+          <caret line="1681" column="0" selection-start-line="1681" selection-start-column="0" selection-end-line="1681" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq/MessagingManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="797" max-vertical-offset="1425">
+          <caret line="68" column="73" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="73" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="585">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thugrunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4257028" vertical-offset="418" max-vertical-offset="945">
+          <caret line="42" column="76" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
+          <folding>
+            <element signature="e#23#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

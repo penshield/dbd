@@ -7,6 +7,8 @@ queue_username="admin"
 queue_password="admin"
 queue_virtualHost = "/"
 crawler_queue = "crawler"
+crawler_exchange_name="sites"
+crawler_exchange_type="fanout"
 DOWNLOADS_DIR = "log/downloads"
 HTML_DIR="log/html"
 BINARIES_DIR  = "%s/binaries" % (DOWNLOADS_DIR, )
@@ -26,4 +28,5 @@ DATABASE_HOST="192.168.1.6"
 DATABASE_PORT=27017
 DATABASE_NAME="honeypot"
 DATABASE_COLLECTION="sites"
+PHONEYC_COLLECTION_NAME="phoneyc_analysis"
 

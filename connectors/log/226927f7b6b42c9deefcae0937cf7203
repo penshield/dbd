@@ -1,0 +1,6 @@
+ActiveXObject.ConnectAndEnterRoom.ConnectAndEnterRoom=<function ConnectAndEnterRoom at 0x7f48c0313668>
+ActiveXObject.ConnectAndEnterRoom.classid=clsid:AE93C5DF-A990-11D1-AEBD-5254ABDD2B69
+ActiveXObject.ConnectAndEnterRoom.style=display:none
+ActiveXObject.ConnectAndEnterRoom.id=target
+ActiveXObject.ConnectAndEnterRoom.appendChild
+ActiveXObject.appendChild.ConnectAndEnterRoom(<DOM.DOMObject.DOMObject object at 0x7f48c05dc210>,)

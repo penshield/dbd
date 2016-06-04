@@ -4,6 +4,7 @@ from flask import Flask , request
 
 from mq.MessagingManager import MessagingManager , DBDMessage
 
+
 app = Flask(__name__)
 
 app.debug = True
@@ -20,18 +21,16 @@ def launcher():
     else:
         try:
 
-            messagingManager = MessagingManager()
+            messagingManager = MessagingManager(broadcast=False)
 
-            #create a new message containing the url , then send it
+
             dbd_message = DBDMessage(url)
-            #now send the formulated message
+            #save it into the database
             messagingManager.sendMessage(dbd_message)
-
             #close the connection to the channel
             messagingManager.closeConnection()
-
-            #return successful connection
             return dict(message="Successfully Received the URL and has been submitted to the Queue",code=200).__str__()
+
 
         except Exception,s:
             print ("There was an exception : %s" % s.message)

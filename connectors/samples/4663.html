@@ -24,7 +24,7 @@ MemContent = unescape("%u0606");
  
 HSize = 20;
  
-FreeSpace = HSize+SCPL.length
+FreeSpace = HSize+SCPL.length;
  
 while (MemContent.length<FreeSpace)  
 {
@@ -40,7 +40,7 @@ while(Mem.length+FreeSpace<0x60000)
     Mem = Mem+Mem+FB;
 }
  
-memory = new Array();
+memory = [];
  
 for (x=0;x<600;x++) memory[x] = Mem + SCPL;
  

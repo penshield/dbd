@@ -22,6 +22,8 @@ import base64
 import logging
 from .compatibility import *
 
+from common import *
+
 try:
     import configparser as ConfigParser
 except ImportError:
@@ -54,6 +56,20 @@ class MongoDB(object):
 
         self.__init_db()
         self.chain_id = self.make_counter(0)
+
+    def __init__(self,thug_version,id):
+        self.thug_version = thug_version
+        self.enabled      = True
+
+        if not self.__check_mongo_module():
+            return
+
+        if not self.__init_config():
+            return
+
+        self.__init_db()
+        self.chain_id = self.make_counter(0)
+        self.site_id = id
 
     def __check_mongo_module(self):
         if not MONGO_MODULE:
@@ -116,7 +132,8 @@ class MongoDB(object):
             self.enabled = False
             return
 
-        db                = connection.thug
+
+        db                = connection[DATABASE_NAME]
         self.urls         = db.urls
         self.analyses     = db.analyses
         self.locations    = db.locations
@@ -166,13 +183,14 @@ class MongoDB(object):
 
         return entry
 
-    def set_url(self, url):
+    def set_url(self, args):
         if not self.enabled:
             return
 
-        self.graph  = ExploitGraph(url)
+        self.graph  = ExploitGraph(args)
 
-        self.url_id = self.get_url(url)
+        self.url_id = self.get_url(args)
+
         if self.url_id is None:
             log.warning('[MongoDB] MongoDB internal error')
             self.enabled = False
@@ -180,6 +198,7 @@ class MongoDB(object):
 
         analysis = {
             "url_id"      : self.url_id,
+            "site_id":self.site_id,
             "timestamp"   : str(datetime.datetime.now()),
             "thug"        : {
                                 "version"            : self.thug_version,

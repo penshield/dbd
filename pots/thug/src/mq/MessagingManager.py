@@ -8,26 +8,26 @@ from common import *
 class DBDMessage(object):
 
     def __init__(self):
-        self.url = ""
+        self.payload = ""
 
-    def __init__(self,url):
-        self.url = url
+    def __init__(self,payload):
+        self.payload = payload
 
     def __str__(self):
-        return self.url
+        return self.payload
     def __repr__(self):
-        return self.url
+        return self.payload
     def __unicode__(self):
-        return self.url
+        return self.payload
 
 
     def __len__(self):
-        return len(self.url)
+        return len(self.payload)
 
 
 class MessagingManager(object):
 
-    def __init__(self,queue=dbd_queue,broadcast=True):
+    def __init__(self,queue=dbd_queue,broadcast=False):
         try:
             self.broadcast = broadcast
             self.credentials=pika.PlainCredentials(username=queue_username,password=queue_password)
@@ -49,7 +49,12 @@ class MessagingManager(object):
         if not isinstance(message,DBDMessage):
             raise Exception("You should pass a DBDMessage instance object instead")
         else:
-            self.channel.basic_publish(exchange=crawler_exchange_name,
+            if self.broadcast:
+                self.channel.basic_publish(exchange=crawler_exchange_name,
+                                       routing_key=queue
+                                       ,body=str(message))
+            else:
+                self.channel.basic_publish(exchange='',
                                        routing_key=queue
                                        ,body=str(message))
             print("Message was sent , Contents : %s" % message)
@@ -59,7 +64,7 @@ class MessagingManager(object):
 
         # if the broadcast is set to True , that means we should bind the exchange to the queue
         if self.broadcast:
-            self.channel.queue_bind(queue=queue,exchange=crawler_exchange_name,routing_key=queue)
+            self.channel.queue_bind(queue=queue,exchange=crawler_exchange_name,routing_key=consumer_tag)
 
         self.channel.basic_consume(consumer_callback=callback,queue=queue,no_ack=True,consumer_tag=consumer_tag)
         self.channel.start_consuming()

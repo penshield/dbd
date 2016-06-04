@@ -19,6 +19,7 @@
 from .BaseLogging import BaseLogging
 from .SampleLogging import SampleLogging
 from .LoggingModules import LoggingModules
+from .modules.MongoDB import MongoDB
 from Analysis.virustotal.VirusTotal import VirusTotal
 from Analysis.honeyagent.HoneyAgent import HoneyAgent
 
@@ -37,7 +38,7 @@ log = logging.getLogger("Thug")
 class ThugLogging(BaseLogging, SampleLogging):
     eval_min_length_logging = 4
 
-    def __init__(self, thug_version):
+    def __init__(self, thug_version,id):
         BaseLogging.__init__(self)
         SampleLogging.__init__(self)
 
@@ -50,6 +51,7 @@ class ThugLogging(BaseLogging, SampleLogging):
         self.shellcode_urls = set()
         self.methods_cache  = dict()
         self.formats        = set()
+        self.site_id = id
 
         self.__init_config()
 
@@ -74,9 +76,14 @@ class ThugLogging(BaseLogging, SampleLogging):
 
         config.read(conf_file)
 
+        #TODO : here it iterates over all registered and enabled logging modules and instantiates them one by one
+
         for name, module in LoggingModules.items():
             if self.check_module(name, config):
-                self.modules[name.strip()] = module(self.thug_version)
+                if name == "mongodb":
+                    self.modules[name.strip()] = module(self.thug_version,self.site_id)
+                else:
+                    self.modules[name.strip()] = module(self.thug_version)
 
         for m in self.modules.values():
             for format in getattr(m, 'formats', tuple()):

@@ -60,6 +60,7 @@ __thug_version__ = '0.7'
 class ThugAPI:
     def __init__(self, args, configuration_path = None):
         self.args               = args
+        self.site_id = args["_id"]
         self.thug_version       = __thug_version__
         log.configuration_path  = configuration_path
         log.personalities_path  = os.path.join(configuration_path, "personalities") if configuration_path else None
@@ -207,9 +208,9 @@ class ThugAPI:
     def disable_honeyagent(self):
         log.ThugOpts.honeyagent = False
 
-    def log_init(self, url):
-        log.ThugLogging = ThugLogging(self.thug_version)
-        log.ThugLogging.set_basedir(url)
+    def log_init(self, args):
+        log.ThugLogging = ThugLogging(self.thug_version,args['_id'])
+        log.ThugLogging.set_basedir_modified(args['url'],args['_id'])
 
     def set_log_dir(self, logdir):
         log.ThugLogging.set_absbasedir(logdir)
@@ -278,19 +279,19 @@ class ThugAPI:
         window.open()
         self.run(window)
 
-    def run_remote(self, url):
-        scheme = urlparse.urlparse(url).scheme
+    def run_remote(self, args):
+        scheme = urlparse.urlparse(args).scheme
 
         if not scheme or not scheme.startswith('http'):
-            url = 'http://%s' % (url, )
+            args = 'http://%s' % (args, )
 
-        log.ThugLogging.set_url(url)
+        log.ThugLogging.set_url(args)
 
         log.HTTPSession = HTTPSession.HTTPSession()
 
         doc    = w3c.parseString('')
         window = Window.Window(log.ThugOpts.referer, doc, personality = log.ThugOpts.useragent)
-        window = window.open(url)
+        window = window.open(args)
         if window:
             self.run(window)
 

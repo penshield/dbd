@@ -47,6 +47,10 @@ class BaseLogging(object):
 
         return True
 
+    def set_basedir_modified(self,url,id):
+        self.set_basedir(url)
+        self.site_id = id
+
     def set_basedir(self, url):
         if self.baseDir:
             return

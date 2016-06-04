@@ -104,9 +104,13 @@ def report(alerts,id,filename,analyzed_url):
     from bson.objectid import ObjectId
     from db.DatabaseManager import DatabaseManager
     #create the database manager in here
-    databaseManager = DatabaseManager()
+    databaseManager = DatabaseManager(collection_name=PHONEYC_COLLECTION_NAME)
     #creating a record
-    record = {"_id":ObjectId(),"id":id,"url":analyzed_url,"filename":filename,"alerts":[]}
+    record = {"_id":ObjectId(),
+              "site_id":id,
+              "url":analyzed_url,
+              "filename":filename,
+              "alerts":[]}
 
     if alerts: # check to see if alerts are not empty
         for alert in alerts:
@@ -163,24 +167,39 @@ def callback(ch, method, properties, body):
     if not body == None and len(body) > 0:
         #get the payload
         payload = ast.literal_eval(body)
-        url = payload['url']
-        id = payload['id']
+        urls = list(payload['urls'])
+        id = payload['_id']
         filename = payload['filename']
         #we should save the data into the database
-        config.initial_URL = url
-        from DOM.DOM import DOM
-        phoneycdom = DOM(config.initial_URL)
-        alerts = phoneycdom.analyze()
-        if alerts:
-            report(alerts,id,filename,url)
-        else:
-            print("No Alerts , The website seems ok")
+        if urls:
+            for url in urls:
+                config.initial_URL = url
+                from DOM.DOM import DOM
+                phoneycdom = DOM(config.initial_URL)
+                alerts = phoneycdom.analyze()
+                if alerts:
+                    report(alerts,id,filename,url)
+                else:
+                    print("No Alerts , The website seems ok")
 
 
 if __name__ == "__main__":
-    print("Started Listening on Queue : %s" % crawler_queue)
-    messagingManager = MessagingManager(queue=crawler_queue)
-    messagingManager.consume(callback=callback,queue=crawler_queue,consumer_tag="DBEmulator")
+
+    messagingManager = None
+
+    while True:
+        try:
+             print("Started Listening on Queue : %s" % crawler_queue)
+             messagingManager = MessagingManager(queue=crawler_queue,broadcast=True)
+             messagingManager.consume(callback=callback,queue=crawler_queue,consumer_tag="phoneyc")
+
+        except Exception ,s :
+            print ("There was an exception : %s\n" % s.message)
+            print("................Ignoring the Exception , Continuing................\n")
+            if not messagingManager == None:
+                messagingManager.closeConnection()
+                messagingManager = None #emptying the variable
+            continue
 
 
 

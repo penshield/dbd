@@ -104,153 +104,18 @@ Synopsis:
         p = getattr(self, 'run_remote', None)
 
         try:
-            options, args = getopt.getopt(self.args,
-                                          'hVu:e:w:n:o:r:p:yszNlxvdqmagA:PS:RJ:Kt:ET:BQ:W:C:FZMGD:b:',
-                ['help',
-                'version',
-                'useragent=',
-                'events=',
-                'delay=',
-                'logdir=',
-                'output=',
-                'referer=',
-                'proxy=',
-                'vtquery',
-                'vtsubmit',
-                'web-tracking',
-                'no-honeyagent',
-                'local',
-                'local-nofetch',
-                'verbose',
-                'debug',
-                'quiet',
-                'no-cache',
-                'ast-debug',
-                'http-debug',
-                'adobepdf=',
-                'no-adobepdf',
-                'shockwave=',
-                'no-shockwave',
-                'javaplugin=',
-                'no-javaplugin',
-                'threshold=',
-                'extensive',
-                'timeout=',
-                'broken-url',
-                'urlclassifier=',
-                'jsclassifier=',
-                'sampleclassifier=',
-                'file-logging',
-                'json-logging',
-                'maec11-logging',
-                'elasticsearch-logging',
-                'mongodb-address=',
-                'vt-apikey=',
-                ])
-        except getopt.GetoptError:
-            self.usage()
+            self.log_init(self.args)
 
-        if not options and not args:
-            self.usage()
-
-        for option in options:
-            if option[0] in ('-h', '--help'):
-                self.usage()
-            elif option[0] in ('-V', '--version'):
-                self.version()
-
-        for option in options:
-            if option[0] in ('-u', '--useragent', ):
-                self.set_useragent(option[1])
-            elif option[0] in ('-e', '--events'):
-                self.set_events(option[1])
-            elif option[0] in ('-w', '--delay'):
-                self.set_delay(option[1])
-            elif option[0] in ('-r', '--referer', ):
-                self.set_referer(option[1])
-            elif option[0] in ('-p', '--proxy', ):
-                self.set_proxy(option[1])
-            elif option[0] in ('-y', '--vtquery', ):
-                self.set_vt_query()
-            elif option[0] in ('-s', '--vtsubmit', ):
-                self.set_vt_submit()
-            elif option[0] in ('-b', '--vt-apikey', ):
-                self.set_vt_runtime_apikey(option[1])
-            elif option[0] in ('-z', '--web-tracking', ):
-                self.set_web_tracking()
-            elif option[0] in ('-N', '--no-honeyagent', ):
-                self.disable_honeyagent()
-            elif option[0] in ('-l', '--local', ):
-                p = getattr(self, 'run_local')
-            elif option[0] in ('-x', '--local-nofetch', ):
-                p = getattr(self, 'run_local')
-                self.set_no_fetch()
-            elif option[0] in ('-v', '--verbose', ):
-                self.set_verbose()
-            elif option[0] in ('-d', '--debug', ):
-                self.set_debug()
-            elif option[0] in ('-m', '--no-cache'):
-                self.set_no_cache()
-            elif option[0] in ('-a', '--ast-debug', ):
-                self.set_ast_debug()
-            elif option[0] in ('-g', '--http-debug', ):
-                self.set_http_debug()
-            elif option[0] in ('-A', '--adobepdf', ):
-                self.set_acropdf_pdf(option[1])
-            elif option[0] in ('-P', '--no-adobepdf', ):
-                self.disable_acropdf()
-            elif option[0] in ('-S', '--shockwave', ):
-                self.set_shockwave_flash(option[1])
-            elif option[0] in ('-R', '--no-shockwave', ):
-                self.disable_shockwave_flash()
-            elif option[0] in ('-J', '--javaplugin', ):
-                self.set_javaplugin(option[1])
-            elif option[0] in ('-K', '--no-javaplugin', ):
-                self.disable_javaplugin()
-            elif option[0] in ('-t', '--threshold', ):
-                self.set_threshold(option[1])
-            elif option[0] in ('-E', '--extensive', ):
-                self.set_extensive()
-            elif option[0] in ('-T', '--timeout', ):
-                self.set_timeout(option[1])
-            elif option[0] in ('-Q', '--urlclassifier'):
-                for classifier in option[1].split(','):
-                    self.add_urlclassifier(os.path.abspath(classifier))
-            elif option[0] in ('-W', '--jsclassifier'):
-                for classifier in option[1].split(','):
-                    self.add_jsclassifier(os.path.abspath(classifier))
-            elif option[0] in ('-C', '--sampleclassifier'):
-                    for classifier in option[1].split(','):
-                        self.add_sampleclassifier(os.path.abspath(classifier))
-            elif option[0] in ('-B', '--broken-url', ):
-                self.set_broken_url()
-            elif option[0] in ('-F', '--file-logging', ):
-                self.set_file_logging()
-            elif option[0] in ('-Z', '--json-logging', ):
-                self.set_json_logging()
-            elif option[0] in ('-M', '--maec11-logging', ):
-                self.set_maec11_logging()
-            elif option[0] in ('-G', '--elasticsearch-logging', ):
-                self.set_elasticsearch_logging()
-            elif option[0] in ('-D', '--mongodb-address', ):
-                self.set_mongodb_address(option[1])
-
-        self.log_init(args[0])
-
-        for option in options:
-            if option[0] in ('-n', '--logdir'):
-                self.set_log_dir(option[1])
-            elif option[0] in ('-o', '--output', ):
-                self.set_log_output(option[1])
-            elif option[0] in ('-q', '--quiet', ):
-                self.set_log_quiet()
-
-        if p:
-            ThugPlugins(PRE_ANALYSIS_PLUGINS, self)()
-            p(args[0])
-            ThugPlugins(POST_ANALYSIS_PLUGINS, self)()
+            if p:
+                ThugPlugins(PRE_ANALYSIS_PLUGINS, self)()
+                p(self.args['url'])
+                ThugPlugins(POST_ANALYSIS_PLUGINS, self)()
+        except Exception , s:
+            print("There was an exception")
+            raise s
 
         self.log_event()
+
         return log
 
 

