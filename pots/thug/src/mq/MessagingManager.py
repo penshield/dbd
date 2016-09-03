@@ -14,15 +14,15 @@ class DBDMessage(object):
         self.payload = payload
 
     def __str__(self):
-        return self.payload
+        return str(self.payload)
     def __repr__(self):
-        return self.payload
+        return str(self.payload)
     def __unicode__(self):
-        return self.payload
+        return str(self.payload)
 
 
     def __len__(self):
-        return len(self.payload)
+        return len(str(self.payload))
 
 
 class MessagingManager(object):

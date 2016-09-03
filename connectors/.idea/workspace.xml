@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9fb6cec-2a23-4892-8a0f-d405396f7825" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pots/thug/src/db/DatabaseManager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pots/thug/src/mq/MessagingManager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pots/thug/src/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pots/thug/src/db/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pots/thug/src/mq/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pots/thug/src/common.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pots/thug/src/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pots/thug/src/thugrunner.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/AnalysisCollector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/AnalysisGrabber.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notifications/EmailManager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notifications/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pop/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/emailer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pop/pop.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/popper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/template.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pots/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pots/phoneyc/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pots/phoneyc/lib/__init__.py" afterPath="" />
@@ -24,131 +25,26 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/pots/phoneyc/modules/libemu/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/pots/phoneyc/output/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../pots/README.MD" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/html/127.0.0.1:9090-25d9907bb1f4689fe86b38f86c0a58b1.html" afterPath="$PROJECT_DIR$/log/html/127.0.0.1:9090-25d9907bb1f4689fe86b38f86c0a58b1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/html/127.0.0.1:9090-a63c3ecd180d97fcd1e291a800ad6b4b.html" afterPath="$PROJECT_DIR$/log/html/127.0.0.1:9090-a63c3ecd180d97fcd1e291a800ad6b4b.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/22811_Elazar.html" afterPath="$PROJECT_DIR$/samples/22811_Elazar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/2448.html" afterPath="$PROJECT_DIR$/samples/2448.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/2575.html" afterPath="$PROJECT_DIR$/samples/2575.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/2mix.html" afterPath="$PROJECT_DIR$/test/2mix.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/3420.html" afterPath="$PROJECT_DIR$/samples/3420.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4042.html" afterPath="$PROJECT_DIR$/samples/4042.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4043.html" afterPath="$PROJECT_DIR$/samples/4043.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4158.html" afterPath="$PROJECT_DIR$/samples/4158.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4226.html" afterPath="$PROJECT_DIR$/samples/4226.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4250.html" afterPath="$PROJECT_DIR$/samples/4250.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4351.html" afterPath="$PROJECT_DIR$/samples/4351.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4420.html" afterPath="$PROJECT_DIR$/samples/4420.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4594.html" afterPath="$PROJECT_DIR$/samples/4594.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4613.html" afterPath="$PROJECT_DIR$/samples/4613.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4663.html" afterPath="$PROJECT_DIR$/samples/4663.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4829.html" afterPath="$PROJECT_DIR$/samples/4829.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4869.html" afterPath="$PROJECT_DIR$/samples/4869.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4874.html" afterPath="$PROJECT_DIR$/samples/4874.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4875.html" afterPath="$PROJECT_DIR$/samples/4875.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4894.html" afterPath="$PROJECT_DIR$/samples/4894.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4903.html" afterPath="$PROJECT_DIR$/samples/4903.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4909.html" afterPath="$PROJECT_DIR$/samples/4909.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4918.html" afterPath="$PROJECT_DIR$/samples/4918.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4932.html" afterPath="$PROJECT_DIR$/samples/4932.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4967.html" afterPath="$PROJECT_DIR$/samples/4967.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4979.html" afterPath="$PROJECT_DIR$/samples/4979.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4982.html" afterPath="$PROJECT_DIR$/samples/4982.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4986.html" afterPath="$PROJECT_DIR$/samples/4986.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/4987.html" afterPath="$PROJECT_DIR$/samples/4987.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5025.html" afterPath="$PROJECT_DIR$/samples/5025.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5043.html" afterPath="$PROJECT_DIR$/samples/5043.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5045.html" afterPath="$PROJECT_DIR$/samples/5045.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5049.html" afterPath="$PROJECT_DIR$/samples/5049.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5051.html" afterPath="$PROJECT_DIR$/samples/5051.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5052.html" afterPath="$PROJECT_DIR$/samples/5052.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5153.html" afterPath="$PROJECT_DIR$/samples/5153.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5190.html" afterPath="$PROJECT_DIR$/samples/5190.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5193.html" afterPath="$PROJECT_DIR$/samples/5193.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5205.html" afterPath="$PROJECT_DIR$/samples/5205.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5264.html" afterPath="$PROJECT_DIR$/samples/5264.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/5271.html" afterPath="$PROJECT_DIR$/samples/5271.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/ARCserve_AddColumn_BoF.html" afterPath="$PROJECT_DIR$/samples/ARCserve_AddColumn_BoF.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/AnswerWorks.htm" afterPath="$PROJECT_DIR$/samples/AnswerWorks.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/Logging/BaseLogging.py" afterPath="$PROJECT_DIR$/../pots/thug/src/Logging/BaseLogging.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/BitDefender.htm" afterPath="$PROJECT_DIR$/samples/BitDefender.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/CABrightStor.htm" afterPath="$PROJECT_DIR$/samples/CABrightStor.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/ConnectAndEnterRoom.htm" afterPath="$PROJECT_DIR$/samples/ConnectAndEnterRoom.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/CreativeSoftAttack.htm" afterPath="$PROJECT_DIR$/samples/CreativeSoftAttack.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/226927f7b6b42c9deefcae0937cf7203" afterPath="$PROJECT_DIR$/log/226927f7b6b42c9deefcae0937cf7203" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler/DBDCrawler.py" afterPath="$PROJECT_DIR$/crawler/DBDCrawler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/DLinkMPEG.htm" afterPath="$PROJECT_DIR$/samples/DLinkMPEG.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/DVRHOSTWeb.htm" afterPath="$PROJECT_DIR$/samples/DVRHOSTWeb.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/DatabaseManager.py" afterPath="$PROJECT_DIR$/db/DatabaseManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/DirectShow.htm" afterPath="$PROJECT_DIR$/samples/DirectShow.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Domino.htm" afterPath="$PROJECT_DIR$/samples/Domino.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/FileUploader.htm" afterPath="$PROJECT_DIR$/samples/FileUploader.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/GatewayWeblaunch.htm" afterPath="$PROJECT_DIR$/samples/GatewayWeblaunch.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/GomWeb.htm" afterPath="$PROJECT_DIR$/samples/GomWeb.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/IMWebControl.htm" afterPath="$PROJECT_DIR$/samples/IMWebControl.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/db/DatabaseManager.py" afterPath="$PROJECT_DIR$/../pots/thug/src/db/DatabaseManager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mq/MessagingManager.py" afterPath="$PROJECT_DIR$/mq/MessagingManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/MicrosoftWorks7Attack.htm" afterPath="$PROJECT_DIR$/samples/MicrosoftWorks7Attack.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/Logging/modules/MongoDB.py" afterPath="$PROJECT_DIR$/../pots/thug/src/Logging/modules/MongoDB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Move.htm" afterPath="$PROJECT_DIR$/samples/Move.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/MyspaceUploader.htm" afterPath="$PROJECT_DIR$/samples/MyspaceUploader.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/NCTAudioFile2.htm" afterPath="$PROJECT_DIR$/samples/NCTAudioFile2.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/NamoInstaller.htm" afterPath="$PROJECT_DIR$/samples/NamoInstaller.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/NeoTracePro.htm" afterPath="$PROJECT_DIR$/samples/NeoTracePro.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OurgameGLWorld.htm" afterPath="$PROJECT_DIR$/samples/OurgameGLWorld.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/OurgameGLWorld.html" afterPath="$PROJECT_DIR$/samples/OurgameGLWorld.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/PPlayer.htm" afterPath="$PROJECT_DIR$/samples/PPlayer.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/PTZCamPanel.htm" afterPath="$PROJECT_DIR$/samples/PTZCamPanel.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Pps.html" afterPath="$PROJECT_DIR$/samples/Pps.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/QuantumStreaming.htm" afterPath="$PROJECT_DIR$/samples/QuantumStreaming.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/mq/MessagingManager.py" afterPath="$PROJECT_DIR$/../pots/thug/src/mq/MessagingManager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/../pots/thug/src/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/RDSDataSpace.htm" afterPath="$PROJECT_DIR$/samples/RDSDataSpace.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/RediffBolDownloaderAttack.htm" afterPath="$PROJECT_DIR$/samples/RediffBolDownloaderAttack.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/RtspVaPgCtrl.htm" afterPath="$PROJECT_DIR$/samples/RtspVaPgCtrl.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/SSReaderPdg2_LoadPage.htm" afterPath="$PROJECT_DIR$/samples/SSReaderPdg2_LoadPage.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/SSReaderPdg2_Register.htm" afterPath="$PROJECT_DIR$/samples/SSReaderPdg2_Register.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/SonicWallNetExtenderAddRouteEntry.htm" afterPath="$PROJECT_DIR$/samples/SonicWallNetExtenderAddRouteEntry.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/StormConfig.htm" afterPath="$PROJECT_DIR$/samples/StormConfig.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/SymantecBackupExec.htm" afterPath="$PROJECT_DIR$/samples/SymantecBackupExec.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/ThugAPI/ThugAPI.py" afterPath="$PROJECT_DIR$/../pots/thug/src/ThugAPI/ThugAPI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/Logging/ThugLogging.py" afterPath="$PROJECT_DIR$/../pots/thug/src/Logging/ThugLogging.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Toshiba.htm" afterPath="$PROJECT_DIR$/samples/Toshiba.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/UUSeeUpdate.htm" afterPath="$PROJECT_DIR$/samples/UUSeeUpdate.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/VLC.htm" afterPath="$PROJECT_DIR$/samples/VLC.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/WMEncProfileManager.htm" afterPath="$PROJECT_DIR$/samples/WMEncProfileManager.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/WinZip.htm" afterPath="$PROJECT_DIR$/samples/WinZip.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Xupload.htm" afterPath="$PROJECT_DIR$/samples/Xupload.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/YahooJukebox.htm" afterPath="$PROJECT_DIR$/samples/YahooJukebox.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/YahooMessengerYVerInfo.htm" afterPath="$PROJECT_DIR$/samples/YahooMessengerYVerInfo.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/YahooMessengerYwcvwr_GetComponentVersion.htm" afterPath="$PROJECT_DIR$/samples/YahooMessengerYwcvwr_GetComponentVersion.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/YahooMessengerYwcvwr_server.htm" afterPath="$PROJECT_DIR$/samples/YahooMessengerYwcvwr_server.htm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/aol_ampx.html" afterPath="$PROJECT_DIR$/samples/aol_ampx.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common.py" afterPath="$PROJECT_DIR$/common.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connector.py" afterPath="$PROJECT_DIR$/connector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler.py" afterPath="$PROJECT_DIR$/crawler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/Debugger/d8.js" afterPath="$PROJECT_DIR$/../pots/thug/src/Debugger/d8.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/domino.html" afterPath="$PROJECT_DIR$/samples/domino.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/common.py" afterPath="$PROJECT_DIR$/../pots/thug/src/common.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emulator.py" afterPath="$PROJECT_DIR$/emulator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/inner_html_example.html" afterPath="$PROJECT_DIR$/samples/inner_html_example.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/intuit.html" afterPath="$PROJECT_DIR$/samples/intuit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/Logging/logging.conf" afterPath="$PROJECT_DIR$/../pots/thug/src/Logging/logging.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/html/login-account.confirm-information.pro-2acd2556cbc91fd5dffc5d1265bb67aa.html" afterPath="$PROJECT_DIR$/log/html/login-account.confirm-information.pro-2acd2556cbc91fd5dffc5d1265bb67aa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/html/login-account.confirm-information.pro-ab6114087b9c7df06d15662e12c3e24d.html" afterPath="$PROJECT_DIR$/log/html/login-account.confirm-information.pro-ab6114087b9c7df06d15662e12c3e24d.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ms09002-mod.html" afterPath="$PROJECT_DIR$/test/ms09002-mod.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/msrichtxt.html" afterPath="$PROJECT_DIR$/samples/msrichtxt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/qvodctl-2.html" afterPath="$PROJECT_DIR$/samples/qvodctl-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/.idea/misc.xml" afterPath="$PROJECT_DIR$/../pots/thug/src/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/qvodctl.html" afterPath="$PROJECT_DIR$/samples/qvodctl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/qvodsrc.html" afterPath="$PROJECT_DIR$/test/qvodsrc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/rgod_imesh.html" afterPath="$PROJECT_DIR$/samples/rgod_imesh.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/show-283-1.html" afterPath="$PROJECT_DIR$/samples/show-283-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ssreader.html" afterPath="$PROJECT_DIR$/test/ssreader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/ssreader_0day.html" afterPath="$PROJECT_DIR$/samples/ssreader_0day.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ssreader_0day.html" afterPath="$PROJECT_DIR$/test/ssreader_0day.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ssreader_noplus.html" afterPath="$PROJECT_DIR$/test/ssreader_noplus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/DOM/thug.js" afterPath="$PROJECT_DIR$/../pots/thug/src/DOM/thug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/thug.py" afterPath="$PROJECT_DIR$/../pots/thug/src/thug.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/toshiba.html" afterPath="$PROJECT_DIR$/samples/toshiba.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../pots/thug/src/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/requirements.txt" afterPath="$PROJECT_DIR$/../pots/thug/src/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/.idea/src.iml" afterPath="$PROJECT_DIR$/../pots/thug/src/.idea/src.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/thugrunner.py" afterPath="$PROJECT_DIR$/../pots/thug/src/thugrunner.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../pots/thug/src/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../pots/thug/src/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/xupload-2.html" afterPath="$PROJECT_DIR$/samples/xupload-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/xupload.html" afterPath="$PROJECT_DIR$/samples/xupload.html" />
     </list>
     <ignored path="connectors.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -163,11 +59,14 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/connectors$thug.coverage" NAME="thug Coverage Results" MODIFIED="1464963471502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pots/thug/src" />
-    <SUITE FILE_PATH="coverage/connectors$emulator.coverage" NAME="emulator Coverage Results" MODIFIED="1465039613518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/connectors$connector.coverage" NAME="connector Coverage Results" MODIFIED="1465039608101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/connectors$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1465039610117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/connectors$DBDCrawler.coverage" NAME="DBDCrawler Coverage Results" MODIFIED="1464900258264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
+    <SUITE FILE_PATH="coverage/connectors$popper.coverage" NAME="popper Coverage Results" MODIFIED="1472877661152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/connectors$connector.coverage" NAME="connector Coverage Results" MODIFIED="1472877012397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/connectors$emulator.coverage" NAME="emulator Coverage Results" MODIFIED="1472877006125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/connectors$crawler.coverage" NAME="crawler Coverage Results" MODIFIED="1472877010717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/connectors$phoneyc__1_.coverage" NAME="phoneyc (1) Coverage Results" MODIFIED="1464914465065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/emulator" />
+    <SUITE FILE_PATH="coverage/connectors$DBDCrawler.coverage" NAME="DBDCrawler Coverage Results" MODIFIED="1464900258264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
+    <SUITE FILE_PATH="coverage/connectors$pop.coverage" NAME="pop Coverage Results" MODIFIED="1465142351705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pop" />
+    <SUITE FILE_PATH="coverage/connectors$emailer.coverage" NAME="emailer Coverage Results" MODIFIED="1472877007941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/connectors$phoneyc.coverage" NAME="phoneyc Coverage Results" MODIFIED="1464892044154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../phoneyc" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -176,30 +75,120 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="connectors" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="emulator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/emulator.py">
+      <file leaf-file-name="crawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2428" max-vertical-offset="3120">
-              <caret line="193" column="35" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="972">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding>
+                <element signature="e#23#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBDCrawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/DBDCrawler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1368">
+              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessagingManager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DatabaseManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/DatabaseManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/emailer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="1116">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <element signature="e#23#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blocking_connection.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/pika/adapters/blocking_connection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="29933" max-vertical-offset="44532">
+              <caret line="1680" column="0" selection-start-line="1680" selection-start-column="0" selection-end-line="1680" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessagingManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mq/MessagingManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28455284" vertical-offset="725" max-vertical-offset="1425">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1084" max-vertical-offset="1692">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notifications/EmailManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalysisCollector.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/AnalysisCollector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="557" max-vertical-offset="2322">
+              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
               <folding>
-                <element signature="e#23#34#0" expanded="true" />
+                <element signature="e#23#69#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalysisGrabber.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/AnalysisGrabber.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8185118" vertical-offset="449" max-vertical-offset="2106">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="popper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/popper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -231,13 +220,21 @@
         <option value="$PROJECT_DIR$/pots/thug/ThugAPI/ThugAPI.py" />
         <option value="$PROJECT_DIR$/pots/thug/DOM/Window.py" />
         <option value="$PROJECT_DIR$/pots/thug/DOMThug/Navigator.py" />
-        <option value="$PROJECT_DIR$/common.py" />
         <option value="$PROJECT_DIR$/connector.py" />
         <option value="$PROJECT_DIR$/crawler.py" />
-        <option value="$PROJECT_DIR$/db/DatabaseManager.py" />
-        <option value="$PROJECT_DIR$/crawler/DBDCrawler.py" />
-        <option value="$PROJECT_DIR$/emulator.py" />
+        <option value="$PROJECT_DIR$/notifications/emailer.py" />
+        <option value="$PROJECT_DIR$/notifications/EmailManager.py" />
         <option value="$PROJECT_DIR$/mq/MessagingManager.py" />
+        <option value="$PROJECT_DIR$/emulator.py" />
+        <option value="$PROJECT_DIR$/templates/template.html" />
+        <option value="$PROJECT_DIR$/pop/pop.py" />
+        <option value="$PROJECT_DIR$/popper.py" />
+        <option value="$PROJECT_DIR$/emailer.py" />
+        <option value="$PROJECT_DIR$/common.py" />
+        <option value="$PROJECT_DIR$/crawler/DBDCrawler.py" />
+        <option value="$PROJECT_DIR$/db/DatabaseManager.py" />
+        <option value="$PROJECT_DIR$/db/AnalysisCollector.py" />
+        <option value="$PROJECT_DIR$/db/AnalysisGrabber.py" />
       </list>
     </option>
   </component>
@@ -245,9 +242,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="63" />
     <option name="y" value="24" />
-    <option name="width" value="1855" />
+    <option name="width" value="1857" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -257,7 +254,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -296,48 +293,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connectors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connectors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connectors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connectors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connectors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="connectors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -346,8 +301,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phoneyc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../justlogmein-project/services" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -363,21 +319,85 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.emulator">
-    <configuration default="false" name="connector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.emailer">
+    <configuration default="false" name="emailer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="connectors" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emailer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="popper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="connectors" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/popper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="connector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="connectors" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/connector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="connectors" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -390,7 +410,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -398,50 +418,6 @@
       <module name="connectors" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emulator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="connectors" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="thug" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pots/thug/src" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="connectors" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pots/thug/src/thug.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -533,9 +509,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -557,6 +530,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
@@ -602,20 +578,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="connectors" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -636,18 +598,34 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.connector" />
-      <item index="1" class="java.lang.String" itemvalue="Python.emulator" />
-      <item index="2" class="java.lang.String" itemvalue="Python.crawler" />
-      <item index="3" class="java.lang.String" itemvalue="Python.thug" />
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="connectors" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.emailer" />
+      <item index="1" class="java.lang.String" itemvalue="Python.popper" />
+      <item index="2" class="java.lang.String" itemvalue="Python.connector" />
+      <item index="3" class="java.lang.String" itemvalue="Python.crawler" />
+      <item index="4" class="java.lang.String" itemvalue="Python.emulator" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.emulator" />
-        <item index="1" class="java.lang.String" itemvalue="Python.crawler" />
-        <item index="2" class="java.lang.String" itemvalue="Python.connector" />
-        <item index="3" class="java.lang.String" itemvalue="Python.thug" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.popper" />
+        <item index="1" class="java.lang.String" itemvalue="Python.connector" />
+        <item index="2" class="java.lang.String" itemvalue="Python.crawler" />
+        <item index="3" class="java.lang.String" itemvalue="Python.emailer" />
+        <item index="4" class="java.lang.String" itemvalue="Python.emulator" />
       </list>
     </recent_temporary>
   </component>
@@ -685,29 +663,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="63" y="24" width="1857" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32674298" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5016077" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2835821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32799557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3772776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32674298" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -727,9 +705,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27074236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -753,35 +731,124 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/crawler/DBDCrawler.py</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emulator.py</url>
-          <line>169</line>
+          <line>177</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emulator.py</url>
-          <line>167</line>
+          <line>175</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/emulator.py</url>
-          <line>166</line>
+          <line>174</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/emulator.py</url>
+          <line>195</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/crawler.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/emailer.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/emailer.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/db/AnalysisCollector.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/pop/pop.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/pop/pop.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/db/AnalysisCollector.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/notifications/EmailManager.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/db/AnalysisCollector.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/db/AnalysisCollector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="1920">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding>
+            <element signature="e#23#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17831" max-vertical-offset="18855">
+          <caret line="1206" column="116" selection-start-line="1206" selection-start-column="116" selection-end-line="1206" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1996" max-vertical-offset="3240">
+          <caret line="156" column="26" selection-start-line="156" selection-start-column="26" selection-end-line="156" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="16710">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq/MessagingManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1425">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/connector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="885">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,23 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="1665">
-          <caret line="103" column="26" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="26" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/pika/adapters/blocking_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29593495" vertical-offset="24883" max-vertical-offset="37110">
-          <caret line="1680" column="0" selection-start-line="1680" selection-start-column="0" selection-end-line="1680" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydev_monkey_qt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="868" max-vertical-offset="2475">
@@ -952,64 +1002,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/pymongo/common.py">
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/utils/six.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="65" max-vertical-offset="10995">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2458" max-vertical-offset="12810">
+          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/poplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5502283" vertical-offset="5563" max-vertical-offset="6495">
+          <caret line="403" column="39" selection-start-line="403" selection-start-column="39" selection-end-line="403" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pop/pop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="1005">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+          <folding>
+            <element signature="e#24#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13036" max-vertical-offset="18855">
+          <caret line="886" column="84" selection-start-line="886" selection-start-column="68" selection-end-line="886" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8346728" vertical-offset="1127" max-vertical-offset="1998">
+          <caret line="103" column="26" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/pymongo/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5414634" vertical-offset="948" max-vertical-offset="1695">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1471" max-vertical-offset="2034">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/pymongo/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="13194">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/pymongo/read_preferences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5609137" vertical-offset="193" max-vertical-offset="3798">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/bson/objectid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3316583" vertical-offset="840" max-vertical-offset="5364">
+          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/bson/errors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/pymongo/errors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33211678" vertical-offset="58" max-vertical-offset="2895">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.3321234" vertical-offset="105" max-vertical-offset="3474">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/utils/six.py">
+    <entry file="file://$PROJECT_DIR$/common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2458" max-vertical-offset="12810">
-          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="20178">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/connector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="1026">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/contextlib.py">
+    <entry file="file://$PROJECT_DIR$/emulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="2370">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3337" max-vertical-offset="3888">
+          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/pika/adapters/blocking_connection.py">
+    <entry file="file://$PROJECT_DIR$/popper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="19318" max-vertical-offset="37110">
-          <caret line="1312" column="42" selection-start-line="1312" selection-start-column="42" selection-end-line="1312" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="972">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="e#23#43#0" expanded="true" />
           </folding>
@@ -1018,47 +1130,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawler/DBDCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="1125">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1368">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/DatabaseManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="615">
-          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#55#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2195122" vertical-offset="0" max-vertical-offset="615">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/emulator.py">
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/pika/adapters/blocking_connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2428" max-vertical-offset="3120">
-          <caret line="193" column="35" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="29933" max-vertical-offset="44532">
+          <caret line="1680" column="0" selection-start-line="1680" selection-start-column="0" selection-end-line="1680" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mq/MessagingManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28455284" vertical-offset="725" max-vertical-offset="1425">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1084" max-vertical-offset="1692">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifications/EmailManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="702">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/emailer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="1116">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
-            <element signature="e#23#34#0" expanded="true" />
+            <element signature="e#23#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/AnalysisCollector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="557" max-vertical-offset="2322">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="e#23#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/AnalysisGrabber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8185118" vertical-offset="449" max-vertical-offset="2106">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

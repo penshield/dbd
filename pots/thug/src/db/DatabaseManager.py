@@ -14,7 +14,7 @@ class DatabaseManager(object):
 
 
     def insert(self,record):
-        self.collection.insert_one(record)
+        self.collection.insert(record)
 
     def insert_many(self,many):
 

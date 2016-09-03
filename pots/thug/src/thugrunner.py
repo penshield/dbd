@@ -19,6 +19,14 @@ def start_thug_analysis(message):
             for url in urls:
                 #begin the thug analysis
                 Thug({"_id":_id,"url":url})()
+
+            #now send notification
+            notificationManager = MessagingManager(queue=notification_queue,broadcast=False)
+            notify_msg = DBDMessage(payload={"name":"thug","site_id":_id})
+            notify_msg.payload = {"name":"thug","site_id":_id}
+            notificationManager.sendMessage(message=notify_msg,queue=notification_queue)
+            notificationManager.closeConnection()
+            print("Notification has been sent\n")
     else:
         print("Thug : Empty Message received , Ignoring it..........\n")
 

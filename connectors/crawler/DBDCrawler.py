@@ -1,3 +1,5 @@
+import bson
+
 __author__ = 'snouto'
 
 from urlparse import urlparse
@@ -6,7 +8,6 @@ import hashlib
 import time
 from mq.MessagingManager import MessagingManager , DBDMessage
 from scrapy.utils.spider import DefaultSpider
-from bson.objectid import ObjectId
 from db.DatabaseManager import DatabaseManager
 
 
@@ -42,7 +43,7 @@ class DBDCrawler(DefaultSpider):
         with open(filename,"wb") as file:
             file.write(response.body)
         # now we should send a message to a specific queue for
-        _id = ObjectId()
+        _id = bson.ObjectId()
         record = {
             "_id":str(_id),
             "domain":str(self.allowed_domains[0]),

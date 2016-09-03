@@ -14,11 +14,11 @@ class DBDMessage(object):
         self.payload = payload
 
     def __str__(self):
-        return self.payload
+        return str(self.payload)
     def __repr__(self):
-        return self.payload
+        return str(self.payload)
     def __unicode__(self):
-        return self.payload
+        return str(self.payload)
 
 
     def __len__(self):
@@ -64,7 +64,7 @@ class MessagingManager(object):
 
         # if the broadcast is set to True , that means we should bind the exchange to the queue
         if self.broadcast:
-            self.channel.queue_bind(queue=queue,exchange=crawler_exchange_name,routing_key=consumer_tag)
+            self.channel.queue_bind(queue=queue,exchange=crawler_exchange_name,routing_key=queue)
 
         self.channel.basic_consume(consumer_callback=callback,queue=queue,no_ack=True,consumer_tag=consumer_tag)
         self.channel.start_consuming()

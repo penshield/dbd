@@ -1,47 +1,3 @@
-__author__ = 'snouto'
-
-
-dbd_queue = "dbd"
-queue_server = "192.168.1.11"
-queue_username="admin"
-queue_password="admin"
-queue_virtualHost = "/"
-crawler_queue = "crawler"
-thug_queue_name = "thugqueue"
-notification_queue = "notification"
-crawler_exchange_name="sites"
-crawler_exchange_type="fanout"
-DOWNLOADS_DIR = "log/downloads"
-HTML_DIR="log/html"
-BINARIES_DIR  = "%s/binaries" % (DOWNLOADS_DIR, )
-PDF_DIR       = "%s/pdf"      % (DOWNLOADS_DIR, )
-APPLET_DIR    = "%s/applet"   % (DOWNLOADS_DIR, )
-MISC_DIR      = "%s/misc"     % (DOWNLOADS_DIR, )
-LOGDIRS       = (BINARIES_DIR,
-                 PDF_DIR,
-                 APPLET_DIR,
-                 MISC_DIR)
-DOWNLOADS_STR = ["data", ]
-
-
-
-#pop Email Settings
-POP_HOST="pop.gmail.com"
-POP_USERNAME="apps@is.com.sa"
-POP_PASSWORD="M@safsafsaF"
-
-
-
-# the database settings goes here
-DATABASE_HOST="192.168.1.11"
-DATABASE_PORT=27017
-DATABASE_NAME="honeypot"
-DATABASE_COLLECTION="sites"
-PHONEYC_COLLECTION_NAME="phoneyc_analysis"
-
-notification_templates_url="/media/snouto/rest/projects/dbd/connectors/templates/"
-notification_email_payload= """
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -940,6 +896,7 @@ notification_email_payload= """
                                                  </div>
 
 
+                                            {% if result.phoneyc is defined %}
                                             <div id="menu1" class="tab-pane fade">
                                                 <h3>PhoneyC - Low Interaction Client Honeypot</h3>
                                                 <p>These findings were obtained by PhoneyC against the submitted URL</p>
@@ -952,7 +909,7 @@ notification_email_payload= """
                                                             <thead>
                                                             <tr>
                                                                 <th>#</th>
-                                                                <th>Saved File Name</th>
+                                                                <th>File Name</th>
 
                                                             </tr>
                                                             </thead>
@@ -968,8 +925,6 @@ notification_email_payload= """
                                                 </div>
                                                 <br/>
 
-
-
                                                 <div class="panel panel-danger">
                                                     <div class="panel-heading">
                                                         <h3 class="panel-title">PhoneyC - Discovered Exploits</h3>
@@ -978,16 +933,26 @@ notification_email_payload= """
                                                         <table class="table">
                                                             <thead>
                                                             <tr>
-                                                                <th>Item Name</th>
-                                                                <th>Item Value</th>
+                                                                <th></th>
+                                                                <th></th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                            <tr>
-                                                                <td>{{Alert item Name}}</td>
-                                                                <td>{{Alert Item Value}}</td>
+                                                            {% for alert in result.phoneyc.alerts %}
+                                                            {% for key,value in alert.items() %}
+
+                                                            {% if key.lower() == "shellcoderesult" %}
+
+                                                            {%else%}
+                                                             <tr>
+                                                                <td>{{key|capitalize}}</td>
+                                                                <td>{{value}}</td>
 
                                                             </tr>
+                                                            {%endif%}
+                                                            {%endfor%}
+                                                            {%endfor%}
+
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -995,11 +960,184 @@ notification_email_payload= """
 
 
                                             </div>
+                                            {%endif %}
                                             <div id="menu2" class="tab-pane fade">
                                                 <h3>Thug Analysis</h3>
                                                 <p>These findings were obtained by running thug against The submitted URL</p>
 
+
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">Thug - General Settings</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Thug Version</th>
+                                                                <th>Emulation Settings</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>{{result.thug.analyses.thug.version}}</td>
+                                                                <td>{{result.thug.analyses.thug.personality.useragent}}</td>
+
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                                 <!-- Beginning of Thug -->
+
+                                                 <div class="panel panel-danger">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">Thug - Discovered Exploits</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {% for exploit in result.thug.exploits %}
+                                                            {% for key,value in exploit.items() %}
+                                                            {% if key.lower() == "url" %}
+                                                            {%else%}
+                                                            <tr>
+                                                                <td>{{key|capitalize}}</td>
+                                                                <td>{{value}}</td>
+
+                                                            </tr>
+                                                            {%endif%}
+                                                            {%endfor%}
+                                                            {%endfor%}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">Thug - Discovered Behaviors</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {% for behavior in result.thug.behaviors %}
+                                                            {% for key,value in behavior.items() %}
+                                                            <tr>
+                                                                <td>{{key|capitalize}}</td>
+                                                                <td>{{value}}</td>
+
+                                                            </tr>
+                                                            {%endfor%}
+                                                            {%endfor%}
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">Thug - Discovered Locations</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {% for location in result.thug.locations %}
+                                                            {% for key,value in location.items() %}
+                                                            <tr>
+                                                                <td>{{key|capitalize}}</td>
+                                                                <td>{{value}}</td>
+
+                                                            </tr>
+                                                            {%endfor%}
+                                                            {%endfor%}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">Thug - Discovered Connections</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {% for connection in result.thug.connections %}
+                                                            {% for key,value in connection.items() %}
+                                                            <tr>
+                                                                <td>{{key|capitalize}}</td>
+                                                                <td>{{value}}</td>
+
+                                                            </tr>
+                                                            {%endfor%}
+                                                            {%endfor%}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title">Thug - Discovered Codes</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {% for code in result.thug.codes %}
+                                                            {% for key,value in code.items() %}
+                                                            <tr>
+                                                                <td>{{key|capitalize}}</td>
+                                                                <td>{{value}}</td>
+
+                                                            </tr>
+                                                            {%endfor%}
+                                                            {%endfor%}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+
+
+
 
                                                 <!-- End of Thug-->
                                             </div>
@@ -1065,8 +1203,8 @@ notification_email_payload= """
                                             <tr>
                                                 <td class="last right-text-pad">
                                                     <h3>Contact Info:</h3>
-                                                    <p>Phone: 408.341.0600</p>
-                                                    <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                                                    <p>Phone: +966562445611</p>
+                                                    <p>Email: <a href="mailto:ashetwey@is.com.sa">ashetwey@is.com.sa</a></p>
                                                 </td>
                                                 <td class="expander"></td>
                                             </tr>
@@ -1112,4 +1250,3 @@ notification_email_payload= """
 
 <!-- Mirrored from avalon.redteamux.com/1.1.1/responsive-email/basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Dec 2014 13:50:30 GMT -->
 </html>
-"""

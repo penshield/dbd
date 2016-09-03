@@ -2,12 +2,13 @@ __author__ = 'snouto'
 
 
 dbd_queue = "dbd"
-queue_server = "192.168.1.6"
+queue_server = "192.168.1.11"
 queue_username="admin"
 queue_password="admin"
 queue_virtualHost = "/"
 crawler_queue = "crawler"
 thug_queue_name = "thugqueue"
+notification_queue = "notification"
 crawler_exchange_name="sites"
 crawler_exchange_type="fanout"
 DOWNLOADS_DIR = "log/downloads"
@@ -25,7 +26,7 @@ DOWNLOADS_STR = ["data", ]
 
 
 # the database settings goes here
-DATABASE_HOST="192.168.1.6"
+DATABASE_HOST="192.168.1.11"
 DATABASE_PORT=27017
 DATABASE_NAME="honeypot"
 DATABASE_COLLECTION="sites"

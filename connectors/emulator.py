@@ -154,6 +154,14 @@ def report(alerts,id,filename,analyzed_url):
         #now save the total record into the database
         databaseManager.insert(record)
         print("The current Analysis has been saved into the database")
+        #send notification
+        """
+        notificationManager = MessagingManager(queue=notification_queue,broadcast=False)
+        notify_msg = DBDMessage(payload= {"name":"phoneyc","site_id":id})
+        notify_msg.payload = {"name":"phoneyc","site_id":id}
+        notificationManager.sendMessage(message=notify_msg,queue=notification_queue)
+        notificationManager.closeConnection()
+        """
     else:
         print ("The analyzed Url seems not malicious in nature")
 
